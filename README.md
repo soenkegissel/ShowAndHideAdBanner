@@ -13,6 +13,7 @@ This is an example of how to dyamically load and place an Google AdMob banner to
 
 **Things to note**
 * Deployment target is iOS 9.3
+* Programming is just a little hobby. This code can be written shorter, safer and more robust. Feel free to request a pull if you improved it.
 
 **Demo**
 * Hides the banner dynamically on rotaton, loads a new banner for the current orientation.
