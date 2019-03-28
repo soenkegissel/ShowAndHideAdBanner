@@ -7,11 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5186F58688C1C29EA06907A2 /* Pods_ShowAndHideAdBanner.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F339E9CA4F9DC09C400E826A /* Pods_ShowAndHideAdBanner.framework */; };
 		82D32C28224BBD19000EE754 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82D32C27224BBD19000EE754 /* AppDelegate.swift */; };
 		82D32C2A224BBD19000EE754 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82D32C29224BBD19000EE754 /* ViewController.swift */; };
 		82D32C2D224BBD19000EE754 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 82D32C2B224BBD19000EE754 /* Main.storyboard */; };
 		82D32C2F224BBD1F000EE754 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 82D32C2E224BBD1F000EE754 /* Assets.xcassets */; };
 		82D32C32224BBD1F000EE754 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 82D32C30224BBD1F000EE754 /* LaunchScreen.storyboard */; };
+		82DBC129224CB27B00D27406 /* ViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82DBC128224CB27B00D27406 /* ViewController+Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +24,10 @@
 		82D32C2E224BBD1F000EE754 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		82D32C31224BBD1F000EE754 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		82D32C33224BBD1F000EE754 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		82DBC128224CB27B00D27406 /* ViewController+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewController+Extension.swift"; sourceTree = "<group>"; };
+		92B7FDDC0A637E232BB0DB86 /* Pods-ShowAndHideAdBanner.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ShowAndHideAdBanner.release.xcconfig"; path = "Target Support Files/Pods-ShowAndHideAdBanner/Pods-ShowAndHideAdBanner.release.xcconfig"; sourceTree = "<group>"; };
+		B396EBAF4C7C5D855A384FA6 /* Pods-ShowAndHideAdBanner.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ShowAndHideAdBanner.debug.xcconfig"; path = "Target Support Files/Pods-ShowAndHideAdBanner/Pods-ShowAndHideAdBanner.debug.xcconfig"; sourceTree = "<group>"; };
+		F339E9CA4F9DC09C400E826A /* Pods_ShowAndHideAdBanner.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ShowAndHideAdBanner.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +35,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5186F58688C1C29EA06907A2 /* Pods_ShowAndHideAdBanner.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +47,8 @@
 			children = (
 				82D32C26224BBD19000EE754 /* ShowAndHideAdBanner */,
 				82D32C25224BBD19000EE754 /* Products */,
+				FD75C67936220A2E775BA02F /* Pods */,
+				D5E3ECB26B858BB3F36A6E9D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -60,8 +69,26 @@
 				82D32C2E224BBD1F000EE754 /* Assets.xcassets */,
 				82D32C30224BBD1F000EE754 /* LaunchScreen.storyboard */,
 				82D32C33224BBD1F000EE754 /* Info.plist */,
+				82DBC128224CB27B00D27406 /* ViewController+Extension.swift */,
 			);
 			path = ShowAndHideAdBanner;
+			sourceTree = "<group>";
+		};
+		D5E3ECB26B858BB3F36A6E9D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F339E9CA4F9DC09C400E826A /* Pods_ShowAndHideAdBanner.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FD75C67936220A2E775BA02F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B396EBAF4C7C5D855A384FA6 /* Pods-ShowAndHideAdBanner.debug.xcconfig */,
+				92B7FDDC0A637E232BB0DB86 /* Pods-ShowAndHideAdBanner.release.xcconfig */,
+			);
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +98,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 82D32C36224BBD1F000EE754 /* Build configuration list for PBXNativeTarget "ShowAndHideAdBanner" */;
 			buildPhases = (
+				62868C90FDF171C4DC0D05B1 /* [CP] Check Pods Manifest.lock */,
 				82D32C20224BBD18000EE754 /* Sources */,
 				82D32C21224BBD18000EE754 /* Frameworks */,
 				82D32C22224BBD18000EE754 /* Resources */,
+				D7B7AC0EBE8ABBBB50C7D8B9 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -130,6 +159,57 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		62868C90FDF171C4DC0D05B1 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ShowAndHideAdBanner-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D7B7AC0EBE8ABBBB50C7D8B9 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ShowAndHideAdBanner/Pods-ShowAndHideAdBanner-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
+				"${BUILT_PRODUCTS_DIR}/ReachabilitySwift/Reachability.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Reachability.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ShowAndHideAdBanner/Pods-ShowAndHideAdBanner-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		82D32C20224BBD18000EE754 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -137,6 +217,7 @@
 			files = (
 				82D32C2A224BBD19000EE754 /* ViewController.swift in Sources */,
 				82D32C28224BBD19000EE754 /* AppDelegate.swift in Sources */,
+				82DBC129224CB27B00D27406 /* ViewController+Extension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -213,7 +294,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -268,7 +349,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -280,6 +361,7 @@
 		};
 		82D32C37224BBD1F000EE754 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B396EBAF4C7C5D855A384FA6 /* Pods-ShowAndHideAdBanner.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -298,6 +380,7 @@
 		};
 		82D32C38224BBD1F000EE754 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 92B7FDDC0A637E232BB0DB86 /* Pods-ShowAndHideAdBanner.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
