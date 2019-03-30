@@ -36,6 +36,10 @@ class ViewController: UIViewController {
         }
     }
     
+    override func viewWillDisappear(_ animated: Bool) {
+        NotificationCenter.default.removeObserver(self, name: .reachabilityChanged, object: reachability)
+    }
+    
     override func viewWillTransition(to size: CGSize, with coordinator: UIViewControllerTransitionCoordinator) {
         // For the duration of transition the banner will removed. As the orientation changes the adSize will be set
         // to the new orientation. AutoLoad will load a new banner automatically, no need for loadRequest.
